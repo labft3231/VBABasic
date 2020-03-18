@@ -1,0 +1,19 @@
+Public Sub ChangeTextColor()
+Dim cond1 As FormatCondition
+Dim rg As Range
+Dim last As Long
+
+last = ActiveSheet.Cells(Application.Rows.Count, "A").End(xlUp).Row
+Set rg = Range("A2:G" & last)
+
+    With rg
+        .FormatConditions.Delete
+        Set cond1 = .FormatConditions.Add(Type:=xlExpression, _
+                              Formula1:="=AND($E2>50)")
+        cond1.StopIfTrue = True
+
+            With .FormatConditions(1)
+                .Font.Color = vbRed
+            End With
+    End With
+End Sub

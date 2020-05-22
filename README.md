@@ -28,3 +28,8 @@
 ##### RPA를 활용하여 다수의 Excel 파일에 메크로를 적용해보자 :rocket:
 
 실행이 되지 않는다면 엑셀 파일을 열어보고 문서간의 충돌도 확인해보고 작업중인 엑셀 프로세스 종료하고 다시 시도해본다.
+
+
+
+#### how to use?
+https://labft3231.github.io/rpa/update/2020/03/20/UiPath-invoke-VBA-Script/
